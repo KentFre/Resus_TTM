@@ -13,3 +13,4 @@ wfdb==4.1.2
 tensorflow==2.18.0
 pydot==3.0.2
 keras-tuner==1.4.7
+shap==0.46.0
