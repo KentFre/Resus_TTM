@@ -1,0 +1,22 @@
+Model Name,Model Instance,Accuracy,Recall,Precision,F1 Score,AUC,Training Time (s),Prediction Time (s)
+Decision Tree,"DecisionTreeClassifier(min_samples_leaf=4, random_state=42)",0.7828947368421053,0.625,0.7446808510638298,0.6796116504854369,0.8265438988095238,3.7845849990844727,0.0
+Random Forest,"RandomForestClassifier(n_estimators=50, random_state=42)",0.7960526315789473,0.5714285714285714,0.8205128205128205,0.6736842105263158,0.8404947916666665,9.631497144699097,0.0
+AdaBoost,"AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=1),
+                   learning_rate=0.1, n_estimators=200, random_state=42)",0.7960526315789473,0.5714285714285714,0.8205128205128205,0.6736842105263158,0.8383556547619048,1.6919329166412354,0.01808786392211914
+Extra Trees,"ExtraTreesClassifier(max_depth=20, min_samples_split=5, n_estimators=200,
+                     random_state=42)",0.756578947368421,0.5357142857142857,0.7317073170731707,0.6185567010309279,0.822172619047619,6.81032919883728,0.011292219161987305
+Logistic Regression,"LogisticRegression(C=1, max_iter=200, solver='liblinear')",0.6842105263157895,0.5178571428571429,0.58,0.5471698113207547,0.7064732142857142,0.3051156997680664,0.0
+SVM,"SVC(C=100, probability=True)",0.75,0.5178571428571429,0.725,0.6041666666666666,0.7007068452380952,0.9864089488983154,0.007531881332397461
+XGBoost,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric='logloss',
+              feature_types=None, gamma=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=0.01, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=5,
+              max_leaves=None, min_child_weight=None, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=50,
+              n_jobs=None, num_parallel_tree=None, random_state=None, ...)",0.7960526315789473,0.48214285714285715,0.9310344827586207,0.6352941176470588,0.8605840773809523,2.282728672027588,0.009541511535644531
+k-NN,"KNeighborsClassifier(metric='manhattan', n_neighbors=7, weights='distance')",0.743421052631579,0.5535714285714286,0.6888888888888889,0.6138613861386139,0.7855282738095237,0.15427923202514648,0.0
